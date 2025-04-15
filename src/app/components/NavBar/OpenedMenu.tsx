@@ -1,6 +1,5 @@
 import { NavigationItem } from '@/model/types'
-import Image from 'next/image'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
 import OpenedMenuItem from './OpenedMenuItem'
 

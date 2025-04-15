@@ -22,13 +22,13 @@ export default function NavigationMenu() {
 
     return (
         <ul
-            className='w-full h-1/2 flex items-center justify-between relative '
+            className='w-full h-1/2 hidden items-center justify-between relative lg:flex '
             onMouseLeave={handleMouseLeave}
         >
             {NavigationItens.map((item, index) => (
                 <li
                     key={item.id}
-                    className='first:font-bold first:flex first:flex-row-reverse first:gap-2 first:items-center text-sm'
+                    className='first:font-bold first:flex first:flex-row-reverse first:gap-2 first:items-center text-xs lg:text-sm'
                     onMouseEnter={() => handleMouseEnter(item.id)}
                 >
                     <p className={`${item.id === currentTitle ? 'text-blueavanti' : ''}`}>{item.title}</p>
