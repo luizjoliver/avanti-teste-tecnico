@@ -20,3 +20,27 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+
+::-webkit-scrollbar {
+  width: 8px; 
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5F5F5; 
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #C2C2C2; 
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+
+
+/* Firefox (opcional) */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #C2C2C2 #F5F5F5;
+}

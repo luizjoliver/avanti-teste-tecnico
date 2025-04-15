@@ -6,7 +6,8 @@ export type NavigationItem = {
     iconImg?: StaticImageData // Importar tipo do Next se necessário
     subTitle?:{
       id:number;
-      title:string;
+      title?:string;
       items:string[]
-    }[]
+    }[],
+    isFirst:boolean;
   }

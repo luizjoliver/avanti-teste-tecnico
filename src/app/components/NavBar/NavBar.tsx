@@ -14,7 +14,7 @@ export default function NavBar() {
     <header className='fixed top-0 left-0 w-screen h-[148px] flex flex-col items-center gap-2 z-20 shadow-md bg-whiteavanti'>
         <DiscountSection/>
 
-        <nav className=' w-3/4 h-[118px]'>
+        <nav className='w-[1420px] h-[118px] 0'>
             <menu className=' w-full h-1/2 flex items-center justify-between'>
                 <div className='flex w-auto h-full  items-center gap-16'>
                     <Image src={logo} alt='teste' className='w-[150px] h-[27px]'/>

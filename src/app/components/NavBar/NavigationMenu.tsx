@@ -4,13 +4,14 @@ import { NavigationItens } from '@/constants'
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
+import OpenedMenu from './OpenedMenu'
 
 export default function NavigationMenu() {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
     const [currentTitle, setCurrentTitle] = useState<number>(0)
 
     function handleMouseEnter(titleId: number) {
-        setIsMenuOpen(true) // Alterado para definir sempre true
+        setIsMenuOpen(true)
         setCurrentTitle(titleId)
     }
 
@@ -21,7 +22,7 @@ export default function NavigationMenu() {
 
     return (
         <ul
-            className='w-full h-1/2 flex items-center justify-between relative'
+            className='w-full h-1/2 flex items-center justify-between relative '
             onMouseLeave={handleMouseLeave}
         >
             {NavigationItens.map((item, index) => (
@@ -46,26 +47,13 @@ export default function NavigationMenu() {
                     className='w-full bg-whiteavanti h-[329px] absolute top-full shadow-lg'
                     onMouseLeave={handleMouseLeave}
                 >
-                    <div className='h-full w-[234px] bg-lightgray'>
+                    <div className='h-full w-full '>
                         {
-                            NavigationItens.map((item,index) =>{
-
+                            NavigationItens.map((item, index) => {
                                 if (item.id === currentTitle) {
-
-                                    return(
-                                        
-                                        <ul className='flex flex-col items-start justify-between text-sm  font-normal size-full px-2 py-4' key={item.id}>
-                                        {item.subTitle!.map((subTitle) =>(
-                                            <li key={subTitle.id} className='w-full  flex justify-between items-center hover:text-blueavanti hover:font-bold'>
-                                                <span>{subTitle.title}</span>
-                                                <IoIosArrowForward />
-                                            </li>
-                                        ))}
-                                        </ul>
-                                        
-                                    )
+                                    return (<OpenedMenu navigationItem={item} key={item.id} />)
                                 }
-                            }  )
+                        })
                         }
                     </div>
                 </div>
