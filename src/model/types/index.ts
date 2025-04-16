@@ -11,3 +11,13 @@ export type NavigationItem = {
     }[],
     isFirst:boolean;
   }
+
+  export type CarouselItemType = {
+    id:number ;
+    title:string;
+    price:number;
+    discountPrice:number;
+    newProduct:boolean;
+    imgSrc:StaticImageData;
+    discount:number;
+  }
