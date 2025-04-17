@@ -1,20 +1,22 @@
-import React from 'react'
 import Carousel from '../Carousel/Carousel'
-import { CarouselItemType } from '@/model/types'
-import Image from 'next/image'
-import productMock from "../../../assets/productMock.png"
+import { CarouselItemType, SingleProductInfoType } from '@/model/types'
+import SingleProduct from '../SingleProduct/SingleProduct'
+
 export type CarouselItemsProps = {
     CarouselItems: CarouselItemType[]
+    reverse?:boolean;
+    SingleProductMock:SingleProductInfoType
 }
 
-export default function ProductsSection({ CarouselItems }: CarouselItemsProps) {
+
+export default function ProductsSection({ CarouselItems ,SingleProductMock,reverse }: CarouselItemsProps) {
     return (
-        <section aria-label="Produtos em destaque" className=" flex flex-col items-center justify-center gap-20 py-12 ">
-            <div className='container mx-auto px-4 flex items-center justify-between text-blackavanti'>
-                <h5 className='font-bold text-xl'>Lançamentos</h5>
-                <button className='hover:underline hover:text-blueavanti'>Ver mais</button>
-            </div>
+        <section aria-label="Produtos em destaque" className={` flex flex-col ${reverse ? 'flex-col-reverse' : ''} items-center justify-center gap-20 py-12`}>
+
             <Carousel CarouselItems={CarouselItems} />
+
+            <SingleProduct SingleProductMock={SingleProductMock} />
+            
         </section>
     )
 }

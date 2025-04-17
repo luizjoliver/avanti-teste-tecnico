@@ -21,3 +21,15 @@ export type NavigationItem = {
     imgSrc:StaticImageData;
     discount:number;
   }
+
+  export type ProductInfoType = {
+    productId: number;
+    imgSrc: StaticImageData;
+    description: string;
+  };
+
+  export type SingleProductInfoType = {
+    title: string;
+    imgSrc: StaticImageData;
+    descriptions: string[];
+}

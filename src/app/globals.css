@@ -28,6 +28,18 @@
   cursor: pointer;
 }
 
+@media (max-width: 320px) {
+  .navigation-button {
+    width: 28px !important;
+    height: 28px !important;
+  }
+  
+  .navigation-icon {
+    width: 14px !important;
+    height: 14px !important;
+  }
+}
+
 ::-webkit-scrollbar {
   width: 8px; 
   height: 8px;
