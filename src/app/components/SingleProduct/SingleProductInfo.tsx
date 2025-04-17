@@ -1,5 +1,5 @@
-import { SingleProductInfoType } from '@/model/types';
-import Image, { StaticImageData } from 'next/image';
+import type { SingleProductInfoType } from '@/model/types';
+import Image from 'next/image';
 
 export interface SingleProductInfoProps {
     ProductInfo : SingleProductInfoType

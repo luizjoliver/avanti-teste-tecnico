@@ -1,5 +1,5 @@
 import SingleProductInfo from "./SingleProductInfo";
-import { SingleProductInfoType } from "@/model/types";
+import type { SingleProductInfoType } from "@/model/types";
 
 export default function SingleProduct({SingleProductMock}:{SingleProductMock:SingleProductInfoType}) {
     return (

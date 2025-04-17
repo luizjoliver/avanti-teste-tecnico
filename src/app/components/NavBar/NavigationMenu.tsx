@@ -1,10 +1,9 @@
 "use client"
 
 import { NavigationItens } from '@/constants'
-import Image from 'next/image'
-import React, { useState } from 'react'
-import { IoIosArrowForward } from 'react-icons/io'
+import { useState } from 'react'
 import OpenedMenu from './OpenedMenu'
+import { CiMenuBurger } from 'react-icons/ci'
 
 export default function NavigationMenu() {
     const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false)
@@ -22,7 +21,7 @@ export default function NavigationMenu() {
 
     return (
         <ul
-            className='w-full h-1/2 hidden items-center justify-between relative lg:flex '
+            className='w-full h-1/2 hidden items-center justify-between relative lg:flex px-4'
             onMouseLeave={handleMouseLeave}
         >
             {NavigationItens.map((item, index) => (
@@ -33,11 +32,8 @@ export default function NavigationMenu() {
                 >
                     <p className={`${item.id === currentTitle ? 'text-blueavanti' : ''}`}>{item.title}</p>
                     {index === 0 && item.iconImg && (
-                        <Image
-                            src={item.iconImg}
-                            alt="menu"
-                            className="w-[14px] h-[10px]"
-                        />
+                    
+                         <CiMenuBurger className={`${item.id === currentTitle ? 'text-blueavanti' : ''} text-lg`} />
                     )}
                 </li>
             ))}

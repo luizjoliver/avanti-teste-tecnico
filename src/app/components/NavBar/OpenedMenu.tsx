@@ -1,4 +1,4 @@
-import { NavigationItem } from '@/model/types'
+import type { NavigationItem } from '@/model/types'
 import { useState } from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
 import OpenedMenuItem from './OpenedMenuItem'

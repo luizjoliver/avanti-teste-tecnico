@@ -5,12 +5,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import CarouselItem from './CarouselItem';
 import { PiArrowLeftThin, PiArrowRightThin } from 'react-icons/pi';
-import { CarouselItemType } from '@/model/types';
+import type { CarouselItemType } from '@/model/types';
 
- type CarouselItemsProps = {
-
-   CarouselItems: CarouselItemType[]
-
+type CarouselItemsProps = {
+  CarouselItems: CarouselItemType[]
 }
 
 export default function Carousel({ CarouselItems }: CarouselItemsProps) {
@@ -31,18 +29,20 @@ export default function Carousel({ CarouselItems }: CarouselItemsProps) {
       </div>
 
       <div className="relative">
+
         <button
           ref={navigationPrevRef}
           aria-label="Slide anterior"
-          className="group absolute left-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-whiteavanti transition-all hover:bg-blueavanti border border-blueavanti cursor-pointer h-8 w-8 md:h-10 md:w-10 flex items-center justify-center shadow-sm hover:shadow-md active:scale-95 -ml-4 md:-ml-8"
+          className="hidden sm:flex group absolute left-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-whiteavanti transition-all hover:bg-blueavanti border border-blueavanti cursor-pointer h-8 w-8 md:h-10 md:w-10 items-center justify-center shadow-sm hover:shadow-md active:scale-95 -ml-4 md:-ml-8"
         >
           <PiArrowLeftThin className="h-4 w-4 md:h-6 md:w-6 text-blueavanti transition-colors group-hover:text-white" />
         </button>
 
+
         <button
           ref={navigationNextRef}
           aria-label="Próximo slide"
-          className="group absolute right-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-whiteavanti transition-all hover:bg-blueavanti border border-blueavanti cursor-pointer h-8 w-8 md:h-10 md:w-10 flex items-center justify-center shadow-sm hover:shadow-md active:scale-95 -mr-4 md:-mr-8"
+          className="hidden sm:flex group absolute right-0 top-1/2 z-10 -translate-y-1/2 transform rounded-full bg-whiteavanti transition-all hover:bg-blueavanti border border-blueavanti cursor-pointer h-8 w-8 md:h-10 md:w-10 items-center justify-center shadow-sm hover:shadow-md active:scale-95 -mr-4 md:-mr-8"
         >
           <PiArrowRightThin className="h-4 w-4 md:h-6 md:w-6 text-blueavanti transition-colors group-hover:text-white" />
         </button>
