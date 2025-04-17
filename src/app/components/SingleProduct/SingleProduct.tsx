@@ -1,4 +1,3 @@
-import { productMock } from "@/constants";
 import SingleProductInfo from "./SingleProductInfo";
 import { SingleProductInfoType } from "@/model/types";
 

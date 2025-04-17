@@ -4,6 +4,8 @@ import ProductsSection from "./components/ProductsSection/ProductsSection";
 import SaleSection from "./components/SaleSection/SaleSection";
 import AvantiContact from "./components/AvantiContact/AvantiContact";
 import ProductDescriptionSection from "./components/ProductDescriptionSection/ProductDescriptionSection";
+import SingleProduct from "./components/SingleProduct/SingleProduct";
+import Carousel from "./components/Carousel/Carousel";
 
 
 export default function Home() {
@@ -13,13 +15,24 @@ export default function Home() {
 
       <SaleSection />
 
-      <ProductsSection CarouselItems={carouselItems} SingleProductMock={productMock}/>
 
-      <ProductDescriptionSection/>
+        <ProductsSection>
 
-      <ProductsSection CarouselItems={carouselItems} reverse SingleProductMock={productMock}/>
+          <Carousel CarouselItems={carouselItems} />
+          <SingleProduct SingleProductMock={productMock} />
 
-      <AvantiContact/>
+        </ProductsSection> 
+
+      <ProductDescriptionSection />
+
+        <ProductsSection reverse>
+
+          <Carousel CarouselItems={carouselItems} />
+          <SingleProduct SingleProductMock={productMock} />
+
+        </ProductsSection> 
+
+      <AvantiContact />
 
     </main>
   );
