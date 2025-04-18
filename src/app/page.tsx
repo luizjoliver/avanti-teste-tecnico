@@ -33,9 +33,9 @@ export default function Home() {
 
         </ProductsSection> 
 
-        <AvantiContactSection title="Entre em contato conosco e verifique a disponibilidade para sua região!" imgSrc={avantiBanner}/>
+         <AvantiContactSection title="Entre em contato conosco e verifique a disponibilidade para sua região!" imgSrc={avantiBanner}/> 
 
-        <Footer/>
+         <Footer/> 
     </main>
   );
 }

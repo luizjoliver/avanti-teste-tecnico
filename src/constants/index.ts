@@ -3,6 +3,23 @@ import menuImg from "../assets/navbar/menu.png";
 import carouselImg from "../assets/carouselImg.png";
 import map from '../assets/map.png';
 import productMockImage from "../assets/productMock.png";
+import facebookLogo from "../assets/footer/facebook.png"
+import InstagramLogo from "../assets/footer/instagram.png"
+import youtubeLogo from "../assets/footer/youtube-logo.png"
+import tiktokLogo from "../assets/footer/logo-tiktok-svgrepo-com.png"
+import amexLogo from "../assets/footer/amex.png"
+import mastercard from "../assets/footer/mastercard.png"
+import visa from "../assets/footer/visa.png"
+import hipercard from "../assets/footer/hipercard.png"
+import celo from "../assets/footer/celo.png"
+import uniao from "../assets/footer/uniao.png"
+import paypal from "../assets/footer/paypal.png"
+import pix from "../assets/footer/pix.png"
+import boleto from "../assets/footer/boleto.png"
+import encrypt from "../assets/footer/encrypt.png"
+import vtexpci from "../assets/footer/vtex-pci-200.png"
+import vtext from "../assets/footer/vtex.png"
+import avanti from "../assets/footer/avantiLogo.png"
 
 export const NavigationItens: NavigationItem[] = [
   {
@@ -487,3 +504,93 @@ export const productMock = {
     "Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum. Fusce sagittis elit a libero commodo egestas efficitur id augue."
   ]
 };
+
+export const socialMediaImages = [
+  {id:2,
+    imgSrc:InstagramLogo,
+    width:'19',
+    height:'19'
+  },
+  {id:1,
+    imgSrc:facebookLogo,
+    width:'10',
+    height:'22'
+  },
+  {id:3,
+    imgSrc:youtubeLogo,
+    width:'23',
+    height:'18'
+  },
+  {id:4,
+    imgSrc:tiktokLogo,
+    width:'18',
+    height:'21'
+  }
+]
+
+export const paymentImages = [
+  {id:1,
+    imgSrc:amexLogo,
+  },
+  {id:2,
+    imgSrc:mastercard,
+ 
+  },
+  {id:3,
+    imgSrc:visa,
+  
+  },
+  {id:4,
+    imgSrc:hipercard,
+   
+  },
+  {id:5,
+    imgSrc:celo,
+  
+  },
+  {id:6,
+    imgSrc:uniao,
+   
+  },
+  {id:7,
+    imgSrc:paypal,
+  
+  },
+  {id:8,
+    imgSrc:pix,
+  
+  },
+  {id:9,
+    imgSrc:boleto,
+   
+  }
+]
+
+export const footerItems = [
+  {
+    id:1,
+    category:'institucional',
+    subCategory :['Sobre nós' ,'Nossas lojas','Privacidade e segurança', 'Termos e condições']
+  },
+  {
+    id:2,
+    category:'Central de ajuda',
+    subCategory :['Fale conosco' ,'Frete e entrega','Trocas e devoluções', 'forma de pagamento','FAQ']
+  },
+
+]
+
+export const companiesItems = [
+  {id:1,
+    imgSrc:encrypt
+  },
+  {id:2,
+    imgSrc:vtexpci
+  },
+  {id:3,
+    imgSrc:avanti
+  },
+  {id:4,
+    imgSrc:vtext
+  },
+]
