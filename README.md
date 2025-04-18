@@ -2,7 +2,14 @@
 
 Bem-vindo(a) ao repositório do **Teste Técnico 1** da Avanti! 🚀
 
-## 🔧 Como rodar o projeto
+## 🌐 Teste o projeto na versão deploy
+
+Acesse a aplicação em:  
+🔗 [https://main.d2tpaspf5v2aut.amplifyapp.com](https://main.d2tpaspf5v2aut.amplifyapp.com)
+
+ 
+
+## 🔧 Como rodar o projeto Localmente
 
 Siga os passos abaixo para configurar e iniciar o projeto localmente:
 
